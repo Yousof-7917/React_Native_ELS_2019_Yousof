@@ -45,8 +45,8 @@ export default class LinksScreen extends React.Component {
               }}
               style={{
                 flex: 10,
-                width: '300px',
-                height:'80px'
+                width: 500 ,
+                height:500,
               }}
             >
           </RNCamera>
