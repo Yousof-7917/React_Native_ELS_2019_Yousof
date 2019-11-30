@@ -1,7 +1,9 @@
 import * as WebBrowser from 'expo-web-browser';
 import React from 'react';
-
-
+import Dashboard from '../screens/Dashboard';
+import Details from '../screens/Details';
+import Form from '../screens/Form';
+import {StackNavigator} from 'react-navigation';
 import {
   AppRegistry,
   StyleSheet,
@@ -18,7 +20,7 @@ import {
 const isAndroid = Platform.OS == "android";
 const viewPadding = 10;
 
-export default class HomeScreen extends React.Component {
+export default  class HomeScreen extends React.Component {
   state = {
     tasks: [],
     text: ""
@@ -159,3 +161,14 @@ const styles = StyleSheet.create({
     width: "100%"
   }
 });
+// const Navigation =StackNavigator({
+//   Dashboard:{
+//     HomeScreen:HomeScreen,
+//   }
+//  , Details:{
+//     screen:Details,
+//   }
+//   ,Form:{
+//     screen:Form,
+//   }
+// })
